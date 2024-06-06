@@ -1,10 +1,15 @@
-#include <iostream>
+#include<iostream>
+using namespace std;
 
-int main() {
-    std::cout << "Los números del 1 al 100 son:" << std::endl;
-    for (int i = 1; i <= 100; i++) {
-        std::cout << i << std::endl;
-    }
+int main(){
+int numero =100;
 
-    return 0;
+while(numero>=1){;
+
+cout<<numero<<endl;
+
+numero--;
+}
+
+return 0;
 }
