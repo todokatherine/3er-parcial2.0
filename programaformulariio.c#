@@ -1,0 +1,59 @@
+[0:07 p. m., 20/6/2024] Valentin : using System;
+using System.Windows.Forms;
+
+namespace HotelReservation
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            InitializeHabitaciones();
+        }
+
+        private class Habitacion
+        {
+            public string Nombre { get; }
+            public int CapacidadMaxima { get; }
+            public float CostoPorNoche { get; }
+
+            public Habitacion(string nombre, int capacidadMaxima, float costoPorNoche)
+            {
+                Nombre = nombre;
+                CapacidadMaxima = capacidadMaxima;
+                CostoPorNoche = costoPorNoche;
+            }
+
+            public float CalcularCostoTotal(int numAdultos, int numNinos, int numDias, float descuentoAdul…
+[0:08 p. m., 20/6/2024] Valentin : using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace HotelReservation
+{
+    public partial class FormCostoTotal : Form
+    {
+        public FormCostoTotal(float costoTotal)
+        {
+            InitializeComponent();
+            lblCostoTotal.Text = $"El costo total de la reserva sería de ${costoTotal} con el descuento aplicado.";
+
+
+        }
+        private void FormCostoTotal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
